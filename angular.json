@@ -31,7 +31,7 @@
         "@schematics/angular:service": {
           "skipTests": true
         }
-      },
+      },  
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",

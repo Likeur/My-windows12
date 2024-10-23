@@ -1,1 +1,42 @@
-<p>accountselection works!</p>
+<section class="h-[100vh] text-white acountbg overflow-hidden relative grid place-content-center">
+
+    <div class="flex flex-col items-center">
+        <div class="absolute z-30 flex top-0 justify-center">
+            <div id="heureBox" class="top-16 relative text-white flex flex-col items-center">
+                <h3 class="text-5xl"> {{date }} </h3>
+                <p class="text-xl">T {{day}} </p>
+            </div>
+        </div>
+        <div id="accountbox" class="flex flex-col items-center bg-white/5 p-8 rounded-3xl backdrop-blur-2xl border border-white/5 overflow-hidden h-60">
+            <div class="">
+                <p class="text-2xl font-light">Select your account</p>
+            </div>
+           <div class="mt-5 grid place-content-center gap-6 relative">
+                
+                <div class="flex flex-col p-6 items-center">
+                    <a (click)="displayInput()" class="size-16 bg-red-600 overflow-hidden ring-2 active:scale-95 ring-white/10 hover:scale-110 hover:cursor-pointer duration-300 rounded-full block">
+                        <img src="/assets/img/like.jpg" class="" alt="">
+                    </a>
+                    <p class="mt-2 text-xl">Likeur</p>
+                </div>
+    
+                <div id="formbox" class="">
+                    <form action="" class="flex flex-col gap-4">
+    
+                        <input type="password" name="" class="border bg-transparent p-2 w-72 px-2 border-white/10 rounded-md active:scale-95 focus:bg-white/10 outline-none hover:border-white/40 duration-300 placeholder:font-light" placeholder="Type your password" id="">
+    
+                        
+                    </form>
+                    <div class="flex items-center justify-end gap-4 mt-4">
+                            
+                        <button (click)="toCancel()" class="p-2 px-4 rounded-md active:scale-95 duration-300 hover:bg-white/15">Cancel</button>
+                        <button (click)="navigateTo()" class="bg-white/10 border border-white/5 p-2 px-4 rounded-md active:scale-95 duration-300 hover:bg-white/15">Log in</button>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+    <div class="absolute bottom-5 left-5">
+        <p> <span class="font-light text-neutral-300">Enter password</span> : Likeur123</p>
+    </div>
+</section>

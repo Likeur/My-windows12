@@ -4,13 +4,14 @@ import { CommonModule } from '@angular/common';
 import { gsap } from 'gsap';
 import { RouterModule } from '@angular/router';
 import { Draggable } from "gsap/Draggable";
+import { BrowserComponent } from '../browser/browser.component';
 gsap.registerPlugin(Draggable);
 
 
 @Component({
   selector: 'app-landing',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, BrowserComponent],
   templateUrl: './landing.component.html',
 })
 export class LandingComponent implements OnInit{

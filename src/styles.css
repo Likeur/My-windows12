@@ -8,3 +8,15 @@
 body{
     font-family: "Urbanist", sans-serif;
 }
+
+.acountbg{
+    background-color:#e799ff;
+    background-image:
+    radial-gradient(at 47% 12%, hsla(226,77%,44%,1) 0px, transparent 50%),
+    radial-gradient(at 76% 16%, hsla(352,77%,44%,1) 0px, transparent 50%),
+    radial-gradient(at 64% 26%, hsla(296,77%,44%,1) 0px, transparent 50%),
+    radial-gradient(at 50% 37%, hsla(218,77%,44%,1) 0px, transparent 50%),
+    radial-gradient(at 36% 0%, hsla(215,77%,44%,1) 0px, transparent 50%),
+    radial-gradient(at 66% 45%, hsla(308,77%,44%,1) 0px, transparent 50%),
+    radial-gradient(at 3% 84%, hsla(303,77%,44%,1) 0px, transparent 50%);
+}
